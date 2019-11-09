@@ -14,6 +14,7 @@ import (
 
 // DefaultTableNameHandler default table name handler
 var DefaultTableNameHandler = func(db *DB, defaultTableName string) string {
+	defaultTableName := "ATF_"+defaultTableName
 	return defaultTableName
 }
 
