@@ -143,5 +143,6 @@ func currentDatabaseAndTable(dialect Dialect, tableName string) (string, string)
 		splitStrings := strings.SplitN(tableName, ".", 2)
 		return splitStrings[0], splitStrings[1]
 	}
+	tableName := "ATF_"+tableName
 	return dialect.CurrentDatabase(), tableName
 }
