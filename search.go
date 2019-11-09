@@ -134,7 +134,7 @@ func (s *search) unscoped() *search {
 }
 
 func (s *search) Table(name string) *search {
-	s.tableName = name
+	s.tableName = "ATF"+name
 	return s
 }
 
